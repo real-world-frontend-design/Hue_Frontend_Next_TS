@@ -18,4 +18,4 @@ const NavLink = ({ href, as, onClick, children }: NavLinkProps) => {
   ); 
 };
 
-export default NavLink;
+export default NavLink; 
