@@ -1,14 +1,11 @@
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css"
+import Navbar  from '../components/commons/NavBar';
 
 export default function about() {
     return (
         <div>
-            <div className={styles.sidenav}>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
+            <Navbar/>
             <div className={styles.main}>
                 <Link href="/">
                     <a>Home</a>
