@@ -1,0 +1,27 @@
+.root {
+    position: relative;
+    width: 600px;
+}
+
+.row {
+    display: flex;
+}
+
+.center {
+    margin: 20px auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+}
+
+.image {
+    height: 40px;
+}
+.media {
+    height: 140px;
+}
