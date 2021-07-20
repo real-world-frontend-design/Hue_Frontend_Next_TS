@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link';
 import Navbar from '../components/commons/NavBar'
 import styles from '../styles/Home.module.css'
 
@@ -14,9 +15,14 @@ export default function Home() {
 
       <main className={styles.main}>
 
+        <Link href="/about" passHref>
+          <h1>Go to about</h1>
+        </Link>
+
         <div className={styles.grid}>
           <h1 className={styles.title}>
             Welcome to <a href="https://nextjs.org">Hue!</a>
+            <Link href="/about"><a>Hello</a></Link>
           </h1>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
