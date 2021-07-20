@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import Navbar from '../components/commons/NavBar'
 import styles from '../styles/Home.module.css'
+import Feed from '../components/Feed';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
             Welcome to <a href="https://nextjs.org">Hue!</a>
             <Link href="/about"><a>Hello</a></Link>
           </h1>
+          <Feed/>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>

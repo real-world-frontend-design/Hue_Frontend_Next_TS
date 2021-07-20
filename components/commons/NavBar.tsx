@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styles from '../../styles/Navbar.module.css';
-import { AiOutlineBars } from "react-icons/ai";
+import { AiOutlineBars, AiFillHome, AiFillBell } from "react-icons/ai";
+import { BsFillPersonFill } from "react-icons/bs";
+import { Avatar } from '@material-ui/core';
 
 const Navbar = () => {
 
@@ -17,12 +19,12 @@ const Navbar = () => {
             </button>
             {isCollapsed ? (
             <nav className={styles.sidenav}>
-                <button>
-                <AiOutlineBars onClick={showSideBar}/>
+                <button onClick={showSideBar}>
+                <Avatar/>
                 </button>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#"><AiFillHome/> Home</a>
+                <a href="#"> <AiFillBell/> Notifications</a>
+                <a href="#"><BsFillPersonFill/> Profile</a>
             </nav>
             ) : null}   
         </div>
